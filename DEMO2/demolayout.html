@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<html>
+        
+<body>
+    <html>
+<head>
+	<meta charset="utf-8">
+	<title>Rectangles</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet"  href="./css/style.css">
+	
+	<style type="text/css">
+		/*  các thuộc tính CSS đặt ở đây */
+
+	body {
+			font-size: 12px;
+		}
+
+		#container {
+			width: 1000px;
+			height: 800px;
+			margin: 0 auto;
+
+		}
+
+		#header {
+		    background-color: white;
+		    width: 100%;
+		    min-height: 100px;
+            float: left;
+		}
+
+		#content {
+			background-color: blue;
+			width: 100%;
+		}
+
+		#footer {
+			width: 100%;
+			min-height: 100px;
+			background-color: purple;
+		}
+
+		#left-content {
+			background-color: red;
+			width: 30%;
+			float: right;
+			min-height: 700px;
+		}
+
+		#right-content {
+			background-color: rgb(128, 0, 11);
+			width: 68%;
+			float: left;
+			min-height: 700px;
+			padding-left: 20px;
+		}
+
+		.h-logo {
+			float: left;
+		}
+
+		#header-logo {
+			padding: 25px 0;
+		}
+
+		.product {
+			width: 200px;
+			height: 276px;
+			margin: 5px;
+			padding: 5px;
+			background-color: #ffffff;
+			float: left;
+		}
+
+		.product .text {
+			width: 90%;
+			text-align: center;
+		}
+
+		.product .p-name a{
+			cursor: pointer;
+			text-decoration: none;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.product .p-price {
+			color: red;
+			font-weight: bold;
+		}
+
+		.product .p-img {
+			text-align: center;
+		}
+
+		#footer {
+			width: 100%;
+			height: 100px;
+			border-top: 1px solid rgb(231, 241, 243);
+		}
+
+		#btfooter {
+			text-align: center;
+		}
+
+		nav{
+			background-color: #47bdec;
+		}
+		nav a{
+			display: inline-block;
+			padding: 10px;
+			font-size: 20px;
+			color: white;
+			text-decoration: none;	
+		}
+		nav a: hover{
+			background-color: #333;
+		}
+
+		#menu-d ul {
+         background: #8AD385;
+         width: 300px;
+         padding: 0;
+         list-style-type: none;
+         text-align: left;
+    }
+    #menu-d li {
+         width: auto;
+         height: 40px;
+         line-height: 40px;
+         border-bottom: 1px solid #e8e8e8;
+         padding: 0 1em;
+    }
+    #menu-d li a {
+         text-decoration: none;
+         color: #333;
+         font-weight: bold;
+         display: block;
+    }
+    #menu-d li:hover {
+     background: #CDE2CD; /* tạo hiệu ứng đổi màu khi rê chuột vào*/
+    }
+
+    #menu-d ul li {
+     position: relative;
+    }
+
+    #menu-d .sub-menu {
+         position: absolute;
+         left: 250px;
+         top: 0;
+         display: none;
+        }
+
+    #menu-d li:hover .sub-menu {
+         display: block;
+        }    
+
+	</style>
+
+</head>
+
+<body>
+
+<div id = "container">
+
+	<div id = "header">
+		<div id = "header-logo">
+			<a href = "https//trptdanang.fpt.edu.vn" class="h-logo">	
+				<img src = "https://tutimviec.com/wp-content/uploads/2018/11/dienmaycholon-amp.jpg" width="70%" height="400">
+			</a>
+			<h1 class = "h-logo">This is header</h1>
+			<div style = "clear:both"></div> 
+		</div>
+
+		<nav>
+			<a href="index.html">Trang chủ</a>
+			<a href="#">Tin tức</a>
+			<a href="#">Sản phẩm</a>
+			<a href="#">Khuyến mãi</a>
+			<a href="contact.html">Liên hệ</a>	
+			<a href="Form_css.html">Đăng Nhập</a>
+
+		</nav>
+
+		<div style="clear:both;"></div>
+	</div>
+
+    <div id="content">
+
+    	<div id="left-content">
+    		<h1>Danh mục</h1>
+    		<div id="menu-d">
+    <ul>
+        <li>
+            <a href="#">Camera Sony</a>
+        </li>
+        <li> <a href="#">Camera LG</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Chống nước</a></li>
+                    <li><a href="#">Thẻ nhớ</a></li>
+                    <li><a href="#">Dây Cáp</a></li>
+                </ul>
+        </li>
+        <li><a href="#">Phụ Kiện</a></li>
+        <li><a href="#">Hàng Cũ</a></li>
+    </ul>
+</div>
+    	</div>
+
+
+    	<div id="right-content">
+
+    		<div id="products" >
+            	
+            	<!-------- Copy product từ đây  -->
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">IPHONE 14 PROMAX</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://tinmoi-247.com/images/post/iphone-14-pro-max-se-that-bai-1225821.jpg?s=680:453" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+				<!--------  Copy product đến đây  -->
+
+				<!-------- Copy product từ đây  -->
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">DELL Vostro V3510</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://images.fpt.shop/unsafe/fit-in/240x215/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/9/15/637673115503991603_dell-vostro-v3510-den-dd.jpg" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+				<!--------  Copy product đến đây  -->
+
+				<!-------- Copy product từ đây  -->
+            	<div class="product">
+					    	<div class="text">
+								<div class="p-name"><a href="item.html">Macbook Air M1 2020</a></div>
+							</div>
+							<div class="p-img">
+								<img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/m/a/macbook_air_22.png" width="200" height="200">
+							</div>
+                    	   
+						<div class="text">
+							
+							<div class="p-cat" >DIGITAL CAMERA </div>
+							<div class="p-price" >Please Call  </div>
+							<input type="button" class="button" name="add" value="Add to cart">
+						</div>
+						<div class="clear"></div>
+				</div>
+				<!--------  Copy product đến đây  -->
+                <!-------- Copy product từ đây  -->
+            	<div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Acer Nitro 5 2021</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="data:image/jpeg;base64,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" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL CAMERA </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+        <!--------  Copy product đến đây  -->
+
+        <!-------- Copy product từ đây  -->
+        <div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Dell xps 13 plus 9320 core i7 2022</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="https://khoavang.vn/resources/cache/800xx1/NewFolder/xps-13-plus-9320-1-1659085595.png" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL CAMERA </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+        <!--------  Copy product đến đây  -->
+
+        <!-------- Copy product từ đây  -->
+        <div class="product">
+                    <div class="text">
+                        <div class="p-name"><a href="item.html">Laptop Asus TUF Gaming FX506LH</a></div>
+                    </div>
+                    <div class="p-img">
+                        <img src="https://cdn.tgdd.vn/Products/Images/44/279259/TimerThumb/asus-tuf-gaming-fx506lhb-i5-hn188w-(14).jpg" width="200" height="200">
+                    </div>
+                   
+                <div class="text">
+                    
+                    <div class="p-cat" >DIGITAL CAMERA </div>
+                    <div class="p-price" >Please Call  </div>
+                    <input type="button" class="button" name="add" value="Add to cart">
+                </div>
+                <div class="clear"></div>
+        </div>
+       
+				<!------------Không paste code product sau dòng này------------------------------------>
+					<div style="clear:both"></div>
+            </div>	    	
+    	</div>
+    	<div style = "clear:both"></div>
+    </div>
+
+	<div id = "footer"> 
+ 		<div id = "btfooter">
+ 			Camera shop Da Nang<br>
+ 			|
+ 			<a href="index.html#">Products</a>
+ 			|
+ 			<a href="index.html#">Service</a>
+ 			|
+ 			<a href="indec.html#">About Us</a>
+ 			|
+ 		</div>
+	</div>
+</div>
+
+</body>
+</html>
+
+
+</body>
+</html>
